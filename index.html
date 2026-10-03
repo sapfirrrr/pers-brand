@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ника Овсянова — автор, подкастер, креатор | Все ссылки и ресурсы</title>
+<meta name="description" content="Ника Ветрова — автор книги «Тише, я говорю», ведущая подкаста «Слушай сюда», создатель контента. Все ссылки на соцсети, подкаст, книгу, курс и материалы — в одном месте.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   RESET & TOKENS
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --paper:#F7F2E9;
+  --paper-2:#EFE8DA;
+  --paper-3:#E6DCC7;
+  --ink:#191512;
+  --ink-soft:#6B625A;
+  --ink-mute:#A09789;
+  --coral:#FF5A36;
+  --mustard:#F0B429;
+  --blue:#2B4CFF;
+  --pink:#FFD6E0;
+  --mint:#C7E5C0;
+  --lilac:#D9CDEF;
+  --line:rgba(25,21,18,.14);
+  --line-2:rgba(25,21,18,.28);
+  --font-d:'Fraunces', 'Times New Roman', serif;
+  --font-b:'Manrope', -apple-system, sans-serif;
+  --font-h:'Caveat', cursive;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --gutter:clamp(18px, 4vw, 60px);
+  --shadow-soft: 0 20px 50px -28px rgba(25,21,18,.28);
+}
+html{scroll-behavior:smooth; -webkit-text-size-adjust:100%}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--font-b);
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+  position:relative;
+}
+/* subtle paper texture */
+body::before{
+  content:'';position:fixed;inset:0;pointer-events:none;z-index:1;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(240,180,41,.06) 0, transparent 40%),
+    radial-gradient(circle at 80% 70%, rgba(255,90,54,.05) 0, transparent 45%),
+    radial-gradient(circle at 60% 10%, rgba(43,76,255,.04) 0, transparent 40%);
+  mix-blend-mode:multiply;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font-family:inherit;font-size:inherit;color:inherit}
+::selection{background:var(--coral);color:#fff}
+
+/* ============================================================
+   HELPERS
+   ============================================================ */
+.wrap{width:100%;max-width:1440px;margin:0 auto;padding:0 var(--gutter);position:relative;z-index:2}
+.mono{font-family:var(--font-b);font-size:.72rem;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft)}
+.hand{font-family:var(--font-h);font-weight:700;color:var(--coral);line-height:1}
+.rule{border:none;border-top:1px solid var(--line);margin:0}
+.rule-2{border:none;border-top:2px solid var(--ink);margin:0}
+.hatch{
+  background-image:repeating-linear-gradient(-45deg, var(--ink) 0 1px, transparent 1px 8px);
+  height:14px;opacity:.22;
+}
+
+/* ============================================================
+   TOP MARQUEE
+   ============================================================ */
+.topbar{
+  background:var(--ink);color:var(--paper);
+  overflow:hidden;position:relative;z-index:10;
+  border-bottom:2px solid var(--ink);
+}
+.topbar-track{
+  display:flex;width:max-content;animation:marq 40s linear infinite;
+}
+.topbar-set{display:flex;align-items:center;flex-shrink:0}
+.topbar-set span{
+  font-family:var(--font-b);font-size:.72rem;font-weight:500;
+  letter-spacing:.18em;text-transform:uppercase;
+  padding:11px 22px;white-space:nowrap;
+}
+.topbar-set span::after{content:'✦';margin-left:22px;color:var(--mustard);font-size:.65rem}
+@keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ============================================================
+   NAV
+   ============================================================ */
+.nav{
+  position:sticky;top:0;z-index:900;
+  background:rgba(247,242,233,.9);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+  transition:box-shadow .3s;
+}
+.nav.scrolled{box-shadow:0 8px 30px -22px rgba(25,21,18,.35)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:26px;padding:16px 0}
+.logo{
+  font-family:var(--font-d);font-weight:600;font-style:italic;
+  font-size:1.35rem;letter-spacing:-.02em;line-height:1;
+  display:flex;align-items:center;gap:12px;
+}
+.logo::before{
+  content:'';width:10px;height:10px;border-radius:50%;background:var(--coral);
+  flex-shrink:0;
+}
+.nav-links{display:flex;align-items:center;gap:30px}
+.nav-links a{
+  font-family:var(--font-b);font-size:.82rem;font-weight:500;
+  color:var(--ink-soft);transition:color .25s;position:relative;
+}
+.nav-links a::before{
+  content:'';position:absolute;left:0;bottom:-6px;width:100%;height:1px;
+  background:var(--coral);transform:scaleX(0);transform-origin:right;
+  transition:transform .4s var(--ease);
+}
+.nav-links a:hover{color:var(--ink)}
+.nav-links a:hover::before{transform:scaleX(1);transform-origin:left}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  padding:13px 24px;border:1.5px solid var(--ink);background:var(--ink);color:var(--paper);
+  font-family:var(--font-b);font-size:.78rem;font-weight:600;letter-spacing:.06em;
+  text-transform:uppercase;cursor:pointer;transition:all .3s var(--ease);
+  border-radius:100px;white-space:nowrap;
+}
+.btn:hover{background:var(--coral);border-color:var(--coral);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--paper)}
+.btn-lg{padding:17px 32px;font-size:.82rem}
+
+.burger{display:none;width:46px;height:46px;border:1.5px solid var(--ink);background:transparent;border-radius:50%;cursor:pointer;position:relative}
+.burger i{position:absolute;left:13px;width:18px;height:1.6px;background:var(--ink);transition:.35s var(--ease)}
+.burger i:nth-child(1){top:17px}
+.burger i:nth-child(2){top:22.5px}
+.burger i:nth-child(3){top:28px}
+.burger.on{background:var(--ink)}
+.burger.on i{background:var(--paper)}
+.burger.on i:nth-child(1){transform:translateY(5.5px) rotate(45deg)}
+.burger.on i:nth-child(2){opacity:0}
+.burger.on i:nth-child(3){transform:translateY(-5.5px) rotate(-45deg)}
+
+@media(max-width:960px){
+  .nav-links{display:none}
+  .burger{display:block}
+}
+
+/* ============================================================
+   MOBILE MENU
+   ============================================================ */
+.drawer{
+  position:fixed;inset:0;z-index:880;background:var(--paper);
+  padding:120px var(--gutter) 40px;display:flex;flex-direction:column;
+  transform:translateY(-100%);transition:transform .55s var(--ease);
+  overflow-y:auto;
+}
+.drawer.open{transform:translateY(0)}
+.drawer a.d-link{
+  font-family:var(--font-d);font-size:clamp(1.9rem,7vw,2.6rem);
+  font-weight:400;font-style:italic;letter-spacing:-.02em;
+  padding:14px 0;border-bottom:1px solid var(--line);
+  display:flex;justify-content:space-between;align-items:center;
+}
+.drawer a.d-link em{font-style:normal;font-family:var(--font-b);font-size:.7rem;letter-spacing:.15em;color:var(--ink-mute);text-transform:uppercase}
+.drawer a.d-link:hover{color:var(--coral)}
+.drawer .d-foot{margin-top:auto;padding-top:34px;display:flex;flex-direction:column;gap:12px}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{padding:clamp(40px,6vw,80px) 0 clamp(50px,6vw,90px);position:relative}
+.hero-in{
+  display:grid;grid-template-columns:1.15fr .85fr;
+  gap:clamp(30px,4vw,64px);align-items:center;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:12px;
+  font-family:var(--font-b);font-size:.72rem;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);
+  margin-bottom:26px;
+}
+.hero-eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--coral);animation:blink 2s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+
+.hero h1{
+  font-family:var(--font-d);font-weight:400;
+  font-size:clamp(3.2rem,8.5vw,7rem);
+  line-height:.92;letter-spacing:-.045em;
+  margin-bottom:26px;
+}
+.hero h1 em{font-style:italic;font-weight:300;color:var(--coral)}
+.hero h1 .u{
+  position:relative;display:inline-block;
+  padding:0 4px;
+}
+.hero h1 .u::after{
+  content:'';position:absolute;left:0;right:0;bottom:6%;height:12px;
+  background:var(--mustard);z-index:-1;transform:skew(-4deg);
+}
+.hero h1 .circled{
+  position:relative;display:inline-block;padding:0 8px;
+}
+.hero h1 .circled::before{
+  content:'';position:absolute;inset:-6px -4px -8px -4px;
+  border:2px solid var(--blue);border-radius:50%;
+  transform:rotate(-2deg);
+}
+
+.hero-lead{
+  font-family:var(--font-d);font-weight:300;
+  font-size:clamp(1.05rem,1.5vw,1.32rem);line-height:1.5;
+  color:var(--ink-soft);max-width:52ch;margin-bottom:36px;
+  font-style:italic;
+}
+.hero-lead b{font-style:normal;font-weight:500;color:var(--ink)}
+
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:34px}
+.hero-hand{
+  font-family:var(--font-h);font-size:1.25rem;color:var(--ink-soft);
+  transform:rotate(-3deg);margin-left:8px;
+}
+
+/* hero media */
+.hero-media{position:relative}
+.hero-photo{
+  position:relative;
+  border-radius:180px 180px 20px 20px;
+  overflow:hidden;
+  aspect-ratio:4/5;
+  background:linear-gradient(160deg,var(--pink),var(--lilac));
+  border:1.5px solid var(--ink);
+  box-shadow:
+    12px 12px 0 0 var(--ink),
+    12px 12px 0 1.5px var(--ink);
+}
+.hero-photo img{
+  width:100%;height:100%;object-fit:cover;object-position:center 25%;
+  filter:saturate(1.05) contrast(1.02);
+}
+.hero-photo::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 55%,rgba(25,21,18,.25) 100%);
+  pointer-events:none;
+}
+
+/* stickers */
+.sticker{
+  position:absolute;z-index:5;
+  font-family:var(--font-h);font-weight:700;
+  font-size:1.15rem;line-height:1;
+  padding:8px 16px;border-radius:100px;
+  border:1.5px solid var(--ink);background:var(--paper);
+  box-shadow:3px 3px 0 0 var(--ink);
+  white-space:nowrap;
+}
+.sticker.s1{top:8%;left:-20px;background:var(--mustard);transform:rotate(-8deg);color:var(--ink)}
+.sticker.s2{bottom:22%;right:-26px;background:var(--coral);color:#fff;transform:rotate(5deg);font-size:1rem}
+.sticker.s3{bottom:6%;left:-10px;background:var(--blue);color:#fff;transform:rotate(-4deg);font-size:.95rem}
+.sticker .num{font-family:var(--font-d);font-weight:700;font-style:italic}
+
+@media(max-width:900px){
+  .hero-in{grid-template-columns:1fr;gap:48px}
+  .hero-media{max-width:400px;margin:0 auto;width:100%}
+}
+@media(max-width:520px){
+  .sticker{font-size:.95rem;padding:6px 12px}
+  .sticker.s2{right:-14px}
+  .hero h1 .circled::before{display:none}
+  .hero-actions .btn{width:100%}
+  .hero-hand{display:none}
+}
+
+/* ============================================================
+   NAME STRIP (big editorial)
+   ============================================================ */
+.namestrip{
+  border-top:1.5px solid var(--ink);border-bottom:1.5px solid var(--ink);
+  padding:0;overflow:hidden;position:relative;z-index:2;
+}
+.namestrip-in{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:30px;padding:16px 0;flex-wrap:wrap;
+}
+.namestrip .nm{
+  font-family:var(--font-d);font-weight:400;font-style:italic;
+  font-size:clamp(1.4rem,3.5vw,2.4rem);letter-spacing:-.03em;line-height:1;
+}
+.namestrip .nm em{font-style:normal;font-weight:600}
+.namestrip .tag{
+  font-family:var(--font-b);font-size:.72rem;font-weight:600;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);
+}
+.namestrip .star{
+  color:var(--coral);font-size:1.4rem;
+}
+
+/* ============================================================
+   SECTION SHELL
+   ============================================================ */
+.section{padding:clamp(60px,8vw,120px) 0;position:relative;z-index:2}
+.sec-head{margin-bottom:clamp(36px,5vw,68px);max-width:900px}
+.sec-head .kicker{
+  display:inline-flex;align-items:center;gap:14px;
+  font-family:var(--font-b);font-size:.72rem;font-weight:600;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);
+  margin-bottom:22px;
+}
+.sec-head .kicker::before{content:'';width:32px;height:1px;background:var(--ink)}
+.sec-head .kicker i{font-style:normal;color:var(--coral)}
+.sec-head h2{
+  font-family:var(--font-d);font-weight:400;
+  font-size:clamp(2.1rem,5.5vw,4rem);
+  line-height:1;letter-spacing:-.035em;
+}
+.sec-head h2 em{font-style:italic;font-weight:300;color:var(--coral)}
+.sec-head h2 b{font-weight:600}
+.sec-head .sub{
+  font-family:var(--font-d);font-style:italic;font-weight:300;
+  font-size:clamp(1rem,1.4vw,1.15rem);color:var(--ink-soft);
+  margin-top:22px;max-width:60ch;
+}
+
+/* ============================================================
+   LINKS HUB (main feature)
+   ============================================================ */
+.links-section{background:var(--paper-2);border-top:1.5px solid var(--ink);border-bottom:1.5px solid var(--ink);position:relative}
+.links-section::before{
+  content:'';position:absolute;top:20px;right:30px;width:60px;height:60px;
+  border-radius:50%;background:var(--mustard);opacity:.35;pointer-events:none;
+}
+.links-section::after{
+  content:'';position:absolute;bottom:26px;left:5%;width:44px;height:44px;
+  background:var(--coral);opacity:.28;transform:rotate(20deg);pointer-events:none;
+}
+
+.links-grid{
+  display:grid;grid-template-columns:repeat(12,1fr);
+  gap:20px;
+}
+.link-card{
+  grid-column:span 4;
+  background:var(--paper);
+  border:1.5px solid var(--ink);border-radius:18px;
+  padding:26px 26px 22px;
+  display:flex;flex-direction:column;gap:16px;
+  min-height:230px;
+  position:relative;overflow:hidden;
+  transition:transform .35s var(--ease), box-shadow .35s var(--ease);
+  cursor:pointer;
+}
+.link-card:hover{transform:translate(-3px,-3px);box-shadow:8px 8px 0 0 var(--ink)}
+.link-card.big{grid-column:span 6;min-height:280px}
+.link-card.med{grid-column:span 6}
+.link-card.sm{grid-column:span 3}
+.link-card.half{grid-column:span 6}
+
+@media(max-width:1024px){
+  .link-card.big,.link-card.half,.link-card.med{grid-column:span 6}
+  .link-card.sm{grid-column:span 6}
+  .link-card{grid-column:span 6}
+}
+@media(max-width:600px){
+  .link-card,.link-card.big,.link-card.med,.link-card.sm,.link-card.half{grid-column:span 12}
+}
+
+.lc-top{display:flex;justify-content:space-between;align-items:flex-start;gap:14px}
+.lc-icon{
+  width:52px;height:52px;border-radius:14px;
+  display:grid;place-items:center;flex-shrink:0;
+  border:1.5px solid var(--ink);
+}
+.lc-icon svg{width:24px;height:24px}
+.lc-arrow{
+  width:34px;height:34px;border-radius:50%;
+  border:1.5px solid var(--ink);
+  display:grid;place-items:center;flex-shrink:0;
+  transition:background .3s, color .3s, transform .35s var(--ease);
+}
+.link-card:hover .lc-arrow{background:var(--ink);color:var(--paper);transform:rotate(-45deg)}
+
+.lc-body{display:flex;flex-direction:column;gap:6px;margin-top:auto}
+.lc-cat{
+  font-family:var(--font-b);font-size:.68rem;font-weight:600;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);
+}
+.lc-title{
+  font-family:var(--font-d);font-weight:500;
+  font-size:clamp(1.15rem,1.6vw,1.45rem);
+  line-height:1.15;letter-spacing:-.02em;
+}
+.lc-desc{
+  font-family:var(--font-b);font-size:.85rem;color:var(--ink-soft);line-height:1.55;
+}
+.lc-stat{
+  font-family:var(--font-d);font-style:italic;font-weight:400;
+  font-size:.85rem;color:var(--coral);margin-top:6px;
+}
+
+/* colored variants */
+.lc-tg .lc-icon{background:#29A9EA}
+.lc-tg .lc-icon svg{fill:#fff}
+.lc-yt .lc-icon{background:var(--coral)}
+.lc-yt .lc-icon svg{fill:#fff}
+.lc-pod .lc-icon{background:var(--blue)}
+.lc-pod .lc-icon svg{fill:#fff}
+.lc-book .lc-icon{background:var(--mustard)}
+.lc-book .lc-icon svg{fill:var(--ink)}
+.lc-insta .lc-icon{background:linear-gradient(45deg,#F58529,#DD2A7B,#8134AF,#515BD4)}
+.lc-insta .lc-icon svg{fill:#fff}
+.lc-course .lc-icon{background:var(--mint)}
+.lc-course .lc-icon svg{fill:var(--ink)}
+.lc-tenchat .lc-icon{background:var(--lilac)}
+.lc-tenchat .lc-icon svg{fill:var(--ink)}
+.lc-tiktok .lc-icon{background:var(--ink)}
+.lc-tiktok .lc-icon svg{fill:#fff}
+
+/* ============================================================
+   ABOUT
+   ============================================================ */
+.about-grid{
+  display:grid;grid-template-columns:1fr 1.5fr;
+  gap:clamp(32px,5vw,80px);align-items:start;
+}
+.about-side{position:sticky;top:110px}
+.about-side .stamp{
+  width:130px;height:130px;border-radius:50%;
+  border:1.5px dashed var(--ink);
+  display:grid;place-items:center;
+  font-family:var(--font-d);font-style:italic;
+  font-size:.9rem;line-height:1.15;text-align:center;
+  padding:14px;color:var(--ink-soft);
+  margin-bottom:28px;
+  animation:spin 30s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+.about-side .hand{font-size:1.5rem;transform:rotate(-3deg);display:inline-block;margin-bottom:16px}
+.about-side p{font-size:.9rem;color:var(--ink-soft);line-height:1.7}
+
+.about-text h2{
+  font-family:var(--font-d);font-weight:400;
+  font-size:clamp(1.9rem,3.8vw,3rem);
+  line-height:1.05;letter-spacing:-.03em;margin-bottom:28px;
+}
+.about-text h2 em{font-style:italic;font-weight:300;color:var(--coral)}
+
+.about-text p{
+  font-family:var(--font-d);font-weight:300;
+  font-size:clamp(1.02rem,1.35vw,1.18rem);
+  line-height:1.62;color:var(--ink-soft);margin-bottom:22px;
+}
+.about-text p b{font-weight:500;color:var(--ink);font-style:normal}
+.about-text .dropcap::first-letter{
+  font-family:var(--font-d);font-weight:600;
+  font-size:4.2em;line-height:.85;
+  float:left;padding:6px 14px 0 0;
+  color:var(--coral);
+}
+
+.about-facts{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:20px;margin-top:44px;padding-top:36px;border-top:1px solid var(--line);
+}
+.afact{display:flex;flex-direction:column;gap:6px}
+.afact b{
+  font-family:var(--font-d);font-weight:600;
+  font-size:clamp(1.9rem,3vw,2.6rem);line-height:1;letter-spacing:-.03em;
+}
+.afact b em{font-style:italic;font-weight:400;color:var(--coral)}
+.afact span{font-family:var(--font-b);font-size:.72rem;font-weight:500;letter-spacing:.13em;text-transform:uppercase;color:var(--ink-mute)}
+@media(max-width:900px){
+  .about-grid{grid-template-columns:1fr;gap:40px}
+  .about-side{position:static;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+  .about-side .stamp{margin-bottom:0}
+}
+
+/* ============================================================
+   HIGHLIGHTS / FEATURED
+   ============================================================ */
+.highlights{background:var(--paper-2)}
+.hl-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:22px;
+}
+@media(max-width:900px){.hl-grid{grid-template-columns:1fr}}
+
+.hl-card{
+  background:var(--paper);border:1.5px solid var(--ink);border-radius:18px;
+  overflow:hidden;display:flex;flex-direction:column;
+  transition:transform .35s var(--ease), box-shadow .35s var(--ease);
+}
+.hl-card:hover{transform:translateY(-6px);box-shadow:8px 8px 0 0 var(--ink)}
+.hl-cover{
+  aspect-ratio:5/3;position:relative;overflow:hidden;
+  border-bottom:1.5px solid var(--ink);
+}
+.hl-cover img{width:100%;height:100%;object-fit:cover}
+.hl-cover .hl-badge{
+  position:absolute;top:14px;left:14px;
+  font-family:var(--font-b);font-size:.66rem;font-weight:600;
+  letter-spacing:.16em;text-transform:uppercase;
+  background:var(--paper);border:1.5px solid var(--ink);
+  padding:5px 11px;border-radius:100px;
+}
+.hl-cover .hl-badge.coral{background:var(--coral);color:#fff;border-color:var(--coral)}
+.hl-cover .hl-badge.blue{background:var(--blue);color:#fff;border-color:var(--blue)}
+.hl-cover .hl-badge.mustard{background:var(--mustard);border-color:var(--mustard)}
+.hl-body{padding:22px 24px 24px;display:flex;flex-direction:column;gap:10px;flex:1}
+.hl-body h3{
+  font-family:var(--font-d);font-weight:500;
+  font-size:1.2rem;line-height:1.22;letter-spacing:-.02em;
+}
+.hl-body p{font-size:.87rem;color:var(--ink-soft);line-height:1.6;flex:1}
+.hl-meta{
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+  padding-top:16px;border-top:1px dashed var(--line-2);margin-top:6px;
+}
+.hl-meta span{font-family:var(--font-b);font-size:.72rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-mute)}
+.hl-meta a{
+  font-family:var(--font-d);font-style:italic;font-size:.95rem;
+  color:var(--ink);display:inline-flex;align-items:center;gap:6px;
+  transition:color .25s;
+}
+.hl-meta a:hover{color:var(--coral)}
+
+/* ============================================================
+   QUOTE STRIP
+   ============================================================ */
+.quotestrip{
+  padding:clamp(50px,7vw,90px) 0;border-top:1.5px solid var(--ink);border-bottom:1.5px solid var(--ink);
+  background:var(--paper);
+  position:relative;
+}
+.quotestrip .qwrap{
+  display:grid;grid-template-columns:auto 1fr auto;gap:clamp(24px,4vw,60px);
+  align-items:center;max-width:1100px;margin:0 auto;
+}
+.quotestrip .qmark{
+  font-family:var(--font-d);font-size:clamp(5rem,12vw,9rem);
+  line-height:.6;font-weight:600;color:var(--coral);
+}
+.quotestrip blockquote{
+  font-family:var(--font-d);font-style:italic;font-weight:300;
+  font-size:clamp(1.3rem,2.6vw,2rem);
+  line-height:1.35;letter-spacing:-.02em;text-align:center;
+}
+.quotestrip blockquote em{font-style:normal;font-weight:500;color:var(--coral)}
+.quotestrip cite{
+  display:block;margin-top:22px;
+  font-family:var(--font-b);font-style:normal;font-size:.72rem;font-weight:600;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);
+}
+@media(max-width:700px){
+  .quotestrip .qwrap{grid-template-columns:1fr;text-align:center;gap:20px}
+  .quotestrip .qmark{text-align:center}
+}
+
+/* ============================================================
+   NEWSLETTER
+   ============================================================ */
+.newsletter{background:var(--ink);color:var(--paper);position:relative;overflow:hidden}
+.newsletter::before{
+  content:'';position:absolute;top:-100px;right:-100px;width:400px;height:400px;
+  border-radius:50%;background:var(--coral);opacity:.18;pointer-events:none;
+}
+.newsletter::after{
+  content:'';position:absolute;bottom:-140px;left:-60px;width:340px;height:340px;
+  border-radius:50%;background:var(--blue);opacity:.22;pointer-events:none;
+}
+.news-grid{
+  display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(30px,5vw,70px);
+  align-items:center;position:relative;z-index:2;
+}
+.news-grid h2{
+  font-family:var(--font-d);font-weight:400;
+  font-size:clamp(2rem,4.5vw,3.4rem);
+  line-height:1;letter-spacing:-.035em;margin-bottom:22px;
+}
+.news-grid h2 em{font-style:italic;font-weight:300;color:var(--mustard)}
+.news-grid p{font-size:1rem;color:rgba(247,242,233,.72);max-width:48ch;line-height:1.65}
+.news-grid .hand{color:var(--mustard);font-size:1.4rem;transform:rotate(-4deg);display:inline-block;margin-top:18px}
+
+.news-form{
+  background:rgba(247,242,233,.06);
+  border:1.5px solid rgba(247,242,233,.24);
+  border-radius:20px;padding:32px 30px;
+  backdrop-filter:blur(8px);
+}
+.news-form label{
+  display:block;font-family:var(--font-b);font-size:.7rem;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;color:rgba(247,242,233,.6);
+  margin-bottom:10px;
+}
+.news-form input[type=email]{
+  width:100%;padding:15px 18px;background:transparent;
+  border:1.5px solid rgba(247,242,233,.32);border-radius:100px;
+  color:var(--paper);font-size:.95rem;outline:none;margin-bottom:16px;
+  transition:border-color .25s, background .25s;
+}
+.news-form input[type=email]::placeholder{color:rgba(247,242,233,.36)}
+.news-form input[type=email]:focus{border-color:var(--mustard);background:rgba(240,180,41,.06)}
+.news-form input.err{border-color:#FF6B4A}
+.news-form .btn{
+  background:var(--mustard);border-color:var(--mustard);color:var(--ink);
+  width:100%;padding:16px 24px;border-radius:100px;
+}
+.news-form .btn:hover{background:var(--paper);border-color:var(--paper)}
+.news-form .check{
+  display:flex;gap:11px;align-items:flex-start;margin:18px 0 0;cursor:pointer;
+}
+.news-form .check input{width:17px;height:17px;margin-top:2px;accent-color:var(--mustard);flex-shrink:0;cursor:pointer}
+.news-form .check span{font-size:.72rem;color:rgba(247,242,233,.55);line-height:1.55}
+.news-success{display:none;text-align:center;padding:20px 6px}
+.news-success.show{display:block;animation:fadeUp .5s var(--ease)}
+.news-success .ok{
+  width:56px;height:56px;border-radius:50%;background:var(--mustard);color:var(--ink);
+  display:grid;place-items:center;margin:0 auto 18px;
+}
+.news-success h3{font-family:var(--font-d);font-weight:500;font-size:1.4rem;color:var(--paper);margin-bottom:10px}
+.news-success p{color:rgba(247,242,233,.7);font-size:.88rem;max-width:36ch;margin:0 auto}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media(max-width:900px){.news-grid{grid-template-columns:1fr;gap:40px}}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer{padding:clamp(50px,6vw,80px) 0 0;background:var(--paper);border-top:1.5px solid var(--ink)}
+.foot-top{
+  display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;
+  gap:clamp(28px,4vw,50px);padding-bottom:clamp(40px,5vw,60px);
+}
+@media(max-width:900px){.foot-top{grid-template-columns:1fr 1fr;gap:30px}}
+@media(max-width:560px){.foot-top{grid-template-columns:1fr}}
+
+.foot-brand .logo{font-size:1.6rem;margin-bottom:20px;display:inline-flex}
+.foot-brand p{font-size:.88rem;color:var(--ink-soft);max-width:34ch;line-height:1.7;margin-bottom:22px}
+.foot-socials{display:flex;gap:10px;flex-wrap:wrap}
+.foot-socials a{
+  width:42px;height:42px;border-radius:50%;border:1.5px solid var(--ink);
+  display:grid;place-items:center;color:var(--ink);
+  transition:all .3s var(--ease);
+}
+.foot-socials a:hover{background:var(--coral);color:#fff;border-color:var(--coral);transform:translateY(-3px)}
+.foot-socials svg{width:17px;height:17px}
+
+.foot h4{
+  font-family:var(--font-b);font-size:.7rem;font-weight:600;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--ink-mute);
+  margin-bottom:18px;
+}
+.foot ul{list-style:none;display:grid;gap:11px}
+.foot ul a{
+  font-family:var(--font-d);font-style:italic;font-size:1.05rem;
+  color:var(--ink);transition:color .25s, padding-left .3s var(--ease);
+  display:inline-block;
+}
+.foot ul a:hover{color:var(--coral);padding-left:6px}
+
+.foot-bottom{
+  border-top:1px solid var(--line);
+  padding:22px 0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  font-family:var(--font-b);font-size:.72rem;font-weight:500;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--ink-mute);
+}
+
+/* ============================================================
+   FLOATING BUTTONS
+   ============================================================ */
+.fab{
+  position:fixed;right:20px;bottom:20px;z-index:800;
+  display:flex;flex-direction:column;gap:10px;
+}
+.fab a{
+  width:52px;height:52px;border-radius:50%;
+  background:var(--paper);border:1.5px solid var(--ink);color:var(--ink);
+  display:grid;place-items:center;
+  box-shadow:4px 4px 0 0 var(--ink);
+  transition:all .3s var(--ease);
+}
+.fab a:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 0 var(--ink)}
+.fab a.tg:hover{background:#29A9EA;color:#fff;border-color:#29A9EA}
+.fab a.wa:hover{background:#25D366;color:#fff;border-color:#25D366}
+.fab svg{width:22px;height:22px}
+
+/* ============================================================
+   REVEAL
+   ============================================================ */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease), transform .8s var(--ease)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+  .topbar-track{animation:none}
+  .about-side .stamp{animation:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ============================ TOP MARQUEE ============================ -->
+<div class="topbar">
+  <div class="topbar-track">
+    <div class="topbar-set">
+      <span>Новый сезон подкаста «Слушай сюда»</span>
+      <span>Книга «Тише, я говорю» — в продаже</span>
+      <span>2 млн прослушиваний</span>
+      <span>120+ выпусков</span>
+      <span>Онлайн-курс «Голос» — набор открыт</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============================ NAV ============================ -->
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#" class="logo">Ника Овсянова</a>
+
+    <nav class="nav-links">
+      <a href="#links">Все ссылки</a>
+      <a href="#about">Обо мне</a>
+      <a href="#highlights">Что почитать</a>
+      <a href="#newsletter">Подписка</a>
+    </nav>
+
+    <div style="display:flex;gap:14px;align-items:center">
+      <a href="#links" class="btn">Все ссылки</a>
+      <button class="burger" id="burger" aria-label="Меню"><i></i><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- ============================ DRAWER ============================ -->
+<div class="drawer" id="drawer">
+  <a class="d-link" href="#links">Все ссылки <em>01</em></a>
+  <a class="d-link" href="#about">Обо мне <em>02</em></a>
+  <a class="d-link" href="#highlights">Что почитать <em>03</em></a>
+  <a class="d-link" href="#newsletter">Подписка <em>04</em></a>
+  <div class="d-foot">
+    <a href="#links" class="btn btn-lg" style="width:100%">Открыть хаб ссылок</a>
+    <a href="mailto:hi@nikavetrova.ru" class="btn btn-ghost" style="width:100%">hi@nikavetrova.ru</a>
+  </div>
+</div>
+
+<!-- ============================ HERO ============================ -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-in">
+      <div class="hero-text">
+        <div class="hero-eyebrow rv">
+          <span class="dot"></span> Автор · Подкастер · Креатор
+        </div>
+
+        <h1 class="rv">
+          Привет, я <em>Ника.</em><br>
+          Пишу, <span class="u">говорю</span><br>
+          и собираю людей
+        </h1>
+
+        <p class="hero-lead rv">
+          Автор книги <b>«Тише, я говорю»</b>, ведущая подкаста <b>«Слушай сюда»</b>
+          и создатель онлайн-курса о голосе и публичных выступлениях.
+          Здесь — все мои ссылки, площадки и то, что стоит почитать или послушать.
+        </p>
+
+        <div class="hero-actions rv">
+          <a href="#links" class="btn btn-lg">Все ссылки в одном месте</a>
+          <span class="hero-hand">↓ листай, тут всё есть</span>
+        </div>
+      </div>
+
+      <div class="hero-media rv">
+        <div class="hero-photo">
+          <img src="foto.jpg" alt="Ника Овсянова"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=800&q=80';">
+        </div>
+        <span class="sticker s1">2 млн <span class="num">▶</span></span>
+        <span class="sticker s2">автор книги</span>
+        <span class="sticker s3">120+ эпизодов</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ NAME STRIP ============================ -->
+<div class="namestrip">
+  <div class="wrap namestrip-in">
+    <span class="nm"><em>Ника Овсянова</em> — говорю, пишу, собираю</span>
+    <span class="star">✦</span>
+    <span class="tag">est. 2014 · Санкт-Петербург → везде</span>
+  </div>
+</div>
+
+<!-- ============================ LINKS HUB ============================ -->
+<section class="section links-section" id="links">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="kicker"><i>01</i> — Все ссылки</div>
+      <h2>Найди меня <em>где угодно</em></h2>
+      <p class="sub">Всё, что у меня есть в интернете — в одном месте. Не нужно гуглить, просто выбери, где тебе удобнее.</p>
+    </div>
+
+    <div class="links-grid rv">
+
+      <!-- TELEGRAM (big) -->
+      <a href="https://t.me/" target="_blank" rel="noopener" class="link-card big lc-tg">
+        <div class="lc-top">
+          <div class="lc-icon">
+            <svg viewBox="0 0 24 24"><path d="M21.9 4.3L19 19.1c-.2 1-.8 1.2-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.5.4-.9.4l.3-4.7 8.5-7.7c.4-.3-.1-.5-.6-.2L7.3 12.9l-4.5-1.4c-1-.3-1-1 .2-1.4l17.5-6.8c.8-.3 1.5.2 1.4 1z"/></svg>
+          </div>
+          <div class="lc-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+        <div class="lc-body">
+          <span class="lc-cat">Telegram · Основное</span>
+          <h3 class="lc-title">Мой канал — здесь я пишу каждый день</h3>
+          <p class="lc-desc">Мысли, находки, анонсы, живые заметки о работе и жизни. Самое важное — сначала тут.</p>
+          <span class="lc-stat">42 000 подписчиков →</span>
+        </div>
+      </a>
+
+      <!-- YOUTUBE -->
+      <a href="https://youtube.com/" target="_blank" rel="noopener" class="link-card med lc-yt">
+        <div class="lc-top">
+          <div class="lc-icon">
+            <svg viewBox="0 0 24 24"><path d="M23 12s0-3.8-.5-5.6c-.3-1-1-1.8-2-2C18.6 4 12 4 12 4s-6.6 0-8.5.4c-1 .3-1.7 1-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6c.3 1 1 1.8 2 2C5.4 20 12 20 12 20s6.6 0 8.5-.4c1-.3 1.7-1 2-2 .5-1.8.5-5.6.5-5.6zM9.8 15.5v-7l6.2 3.5-6.2 3.5z"/></svg>
+          </div>
+          <div class="lc-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+        <div class="lc-body">
+          <span class="lc-cat">YouTube</span>
+          <h3 class="lc-title">Видео, интервью и большие разговоры</h3>
+          <p class="lc-desc">Длинные разговоры с интересными людьми и короткие видео о голосе и текстах.</p>
+          <span class="lc-stat">180 тыс. подписчиков</span>
+        </div>
+      </a>
+
+      <!-- PODCAST (big) -->
+      <a href="#" target="_blank" rel="noopener" class="link-card big lc-pod">
+        <div class="lc-top">
+          <div class="lc-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2a3 3 0 00-3 3v6a3 3 0 006 0V5a3 3 0 00-3-3zm7 9a7 7 0 01-6 6.9V21h-2v-3.1A7 7 0 015 11h2a5 5 0 0010 0h2z"/></svg>
+          </div>
+          <div class="lc-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+        <div class="lc-body">
+          <span class="lc-cat">Подкаст · Слушай сюда</span>
+          <h3 class="lc-title">«Слушай сюда» — подкаст о голосе и людях</h3>
+          <p class="lc-desc">Разговоры о том, как звучать, когда важно. Гости — актёры, ведущие, ораторы, музыканты. Новые эпизоды каждый вторник.</p>
+          <span class="lc-stat">2 млн прослушиваний · 120 эпизодов</span>
+        </div>
+      </a>
+
+      <!-- BOOK -->
+      <a href="#" target="_blank" rel="noopener" class="link-card med lc-book">
+        <div class="lc-top">
+          <div class="lc-icon">
+            <svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v13a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2zm8 1v5h5M8 12h8M8 16h5"/></svg>
+          </div>
+          <div class="lc-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+        <div class="lc-body">
+          <span class="lc-cat">Книга</span>
+          <h3 class="lc-title">«Тише, я говорю»</h3>
+          <p class="lc-desc">О том, как найти свой голос, когда все вокруг говорят громче. 304 страницы, издательство «МИФ».</p>
+          <span class="lc-stat">Тираж 45 000 экз.</span>
+        </div>
+      </a>
+
+      <!-- COURSE -->
+      <a href="#" target="_blank" rel="noopener" class="link-card med lc-course">
+        <div class="lc-top">
+          <div class="lc-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 3L2 9l10 6 10-6-10-6zM6 12v5c0 1 3 3 6 3s6-2 6-3v-5"/></svg>
+          </div>
+          <div class="lc-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+        <div class="lc-body">
+          <span class="lc-cat">Онлайн-курс</span>
+          <h3 class="lc-title">«Голос» — 6 недель работы над звучанием</h3>
+          <p class="lc-desc">Для тех, кто боится говорить публично. Дыхание, тело, текст, камера, страх и практика.</p>
+          <span class="lc-stat">4-й поток · старт 15 ноября</span>
+        </div>
+      </a>
+
+      <!-- INSTAGRAM -->
+      <a href="https://instagram.com/" target="_blank" rel="noopener" class="link-card sm lc-insta">
+        <div class="lc-top">
+          <div class="lc-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.9.9 1.4.2.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.9.7-1.4.9-.4.2-1 .4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.9-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.9-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.2-.1 1.6-.1 4.8-.1zm0 3.4a6.4 6.4 0 100 12.8 6.4 6.4 0 000-12.8zm0 10.5a4.1 4.1 0 110-8.2 4.1 4.1 0 010 8.2zm6.6-10.7a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+          </div>
+          <div class="lc-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+        <div class="lc-body">
+          <span class="lc-cat">Instagram</span>
+          <h3 class="lc-title">Короткие видео и бэкстейдж</h3>
+        </div>
+      </a>
+
+      <!-- TIKTOK -->
+      <a href="https://tiktok.com/" target="_blank" rel="noopener" class="link-card sm lc-tiktok">
+        <div class="lc-top">
+          <div class="lc-icon">
+            <svg viewBox="0 0 24 24"><path d="M16.5 2h-3v13.5a3 3 0 11-3-3v-3a6 6 0 106 6V8.5a7 7 0 004 1.3V7a4 4 0 01-4-5z"/></svg>
+          </div>
+          <div class="lc-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+        <div class="lc-body">
+          <span class="lc-cat">TikTok</span>
+          <h3 class="lc-title">Мини-уроки о речи</h3>
+        </div>
+      </a>
+
+      <!-- TENCHAT -->
+      <a href="#" target="_blank" rel="noopener" class="link-card sm lc-tenchat">
+        <div class="lc-top">
+          <div class="lc-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 3.5c1 0 1.8.3 2.5.9l-2.5 2.5-2.5-2.5c.7-.6 1.5-.9 2.5-.9zM5.5 12c0-1 .3-1.8.9-2.5l2.5 2.5-2.5 2.5c-.6-.7-.9-1.5-.9-2.5zm6.5 6.5c-1 0-1.8-.3-2.5-.9l2.5-2.5 2.5 2.5c-.7.6-1.5.9-2.5.9zm6.5-6.5c0 1-.3 1.8-.9 2.5l-2.5-2.5 2.5-2.5c.6.7.9 1.5.9 2.5z"/></svg>
+          </div>
+          <div class="lc-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+        <div class="lc-body">
+          <span class="lc-cat">TenChat</span>
+          <h3 class="lc-title">Разборы для профи</h3>
+        </div>
+      </a>
+
+      <!-- SITE / SHOP -->
+      <a href="#" target="_blank" rel="noopener" class="link-card sm lc-course">
+        <div class="lc-top">
+          <div class="lc-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 3h18v4H3V3zm1 6h16l-1.5 11h-13L4 9zm5 3v6M12 9v6M15 9v6"/></svg>
+          </div>
+          <div class="lc-arrow">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+        </div>
+        <div class="lc-body">
+          <span class="lc-cat">Магазин</span>
+          <h3 class="lc-title">Книги, мерч, курсы</h3>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================ ABOUT ============================ -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <aside class="about-side rv">
+        <div class="stamp">говорю о голосе с 2014 года ✦</div>
+        <span class="hand">кто я вообще такая?</span>
+        <p>Меня зовут Ника. Я работаю с голосом — своим и чужим. И рассказываю об этом так, чтобы было не страшно.</p>
+      </aside>
+
+      <div class="about-text rv">
+        <h2>Я — не про «правильно говорить». Я про <em>быть услышанным</em></h2>
+
+        <p class="dropcap">Всё началось в 2014 году, когда я, тогда ещё редактор в глянцевом журнале, вдруг поняла, что боюсь говорить на совещаниях. Я писала тексты для других людей, а сама молчала. Мне казалось, что мой голос недостаточно весомый, слишком тонкий, неудобный.</p>
+
+        <p>Тогда я начала разбираться — сначала для себя. Так появился блог, потом подкаст, потом книга. Сегодня через меня прошло больше <b>6 000 человек</b>: предприниматели, врачи, преподаватели, актёры, основатели стартапов — все, кто хочет звучать так, как чувствует себя внутри.</p>
+
+        <p>Я верю, что голос — это не техника. Это право. Право занимать место в комнате, говорить то, что думаешь, и быть услышанным. Всё остальное — дыхание, интонация, паузы — это инструменты, которые можно натренировать.</p>
+
+        <div class="about-facts">
+          <div class="afact"><b>10<em>+</em></b><span>лет практики</span></div>
+          <div class="afact"><b>6 000<em>+</em></b><span>учеников</span></div>
+          <div class="afact"><b>2 <em>млн</em></b><span>прослушиваний</span></div>
+          <div class="afact"><b>45 000</b><span>экземпляров книги</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ HIGHLIGHTS ============================ -->
+<section class="section highlights" id="highlights">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="kicker"><i>02</i> — Что почитать и послушать</div>
+      <h2>Начни <em>отсюда</em>, если только знакомимся</h2>
+      <p class="sub">Три вещи, которые дадут самое полное представление обо мне и о том, о чём я говорю.</p>
+    </div>
+
+    <div class="hl-grid rv">
+      <article class="hl-card">
+        <div class="hl-cover">
+          <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=800&q=80" alt="Подкаст" loading="lazy">
+          <span class="hl-badge blue">Подкаст</span>
+        </div>
+        <div class="hl-body">
+          <h3>Самый популярный эпизод: «Как перестать извиняться за свой голос»</h3>
+          <p>Полтора часа честного разговора с вокальным педагогом о том, откуда берётся страх звучать.</p>
+          <div class="hl-meta">
+            <span>54 мин</span>
+            <a href="#">Слушать →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="hl-card">
+        <div class="hl-cover">
+          <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80" alt="Книга" loading="lazy">
+          <span class="hl-badge mustard">Книга</span>
+        </div>
+        <div class="hl-body">
+          <h3>Глава «Тише, я говорю» — про то, как я замолчала на 2 года</h3>
+          <p>Отрывок из книги, которая стала для многих отправной точкой. Про молчание, страх и возвращение к себе.</p>
+          <div class="hl-meta">
+            <span>12 мин чтения</span>
+            <a href="#">Читать →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="hl-card">
+        <div class="hl-cover">
+          <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=800&q=80" alt="Статья" loading="lazy">
+          <span class="hl-badge coral">Статья</span>
+        </div>
+        <div class="hl-body">
+          <h3>Почему «говори громче» — худший совет, который можно дать</h3>
+          <p>Короткий текст о том, что громкость — не про силу, и как звучать уверенно, не повышая голос.</p>
+          <div class="hl-meta">
+            <span>6 мин чтения</span>
+            <a href="#">Читать →</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ QUOTE STRIP ============================ -->
+<section class="quotestrip">
+  <div class="wrap">
+    <div class="qwrap rv">
+      <span class="qmark">“</span>
+      <blockquote>
+        Голос — это не то, что вы тренируете. Это то, что вы <em>разрешаете</em> себе.
+        <cite>— Ника Овсянова, «Тише, я говорю»</cite>
+      </blockquote>
+      <span class="qmark">”</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ NEWSLETTER ============================ -->
+<section class="section newsletter" id="newsletter">
+  <div class="wrap">
+    <div class="news-grid">
+      <div class="rv">
+        <h2>Письма по <em>вторникам</em></h2>
+        <p>Раз в неделю присылаю одно письмо: короткая мысль, находка недели и вопрос, над которым стоит подумать. Без спама, без продаж, без «купите курс».</p>
+        <span class="hand">уже 12 400 человек читают</span>
+      </div>
+
+      <div class="news-form rv">
+        <form id="subForm" novalidate>
+          <label for="email">Твой e-mail</label>
+          <input type="email" id="email" placeholder="you@example.com" required>
+          <label class="check">
+            <input type="checkbox" id="subAgree" required>
+            <span>Согласен(а) получать письма. Понимаю, что могу отписаться в любой момент одним кликом.</span>
+          </label>
+          <button type="submit" class="btn" style="margin-top:18px">Подписаться</button>
+        </form>
+
+        <div class="news-success" id="subSuccess">
+          <div class="ok">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+          </div>
+          <h3>Проверь почту!</h3>
+          <p>Отправила письмо с подтверждением. Кликни по ссылке внутри — и всё, ты в списке.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <span class="logo">Ника Овсянова</span>
+        <p>Автор, подкастер, креатор. Пишу и говорю о голосе, текстах и людях. Живу между Петербургом и поездами.</p>
+        <div class="foot-socials">
+          <a href="https://t.me/" target="_blank" rel="noopener" aria-label="Telegram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3L19 19.1c-.2 1-.8 1.2-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.5.4-.9.4l.3-4.7 8.5-7.7c.4-.3-.1-.5-.6-.2L7.3 12.9l-4.5-1.4c-1-.3-1-1 .2-1.4l17.5-6.8c.8-.3 1.5.2 1.4 1z"/></svg>
+          </a>
+          <a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.8-.5-5.6c-.3-1-1-1.8-2-2C18.6 4 12 4 12 4s-6.6 0-8.5.4c-1 .3-1.7 1-2 2C1 8.2 1 12 1 12s0 3.8.5 5.6c.3 1 1 1.8 2 2C5.4 20 12 20 12 20s6.6 0 8.5-.4c1-.3 1.7-1 2-2 .5-1.8.5-5.6.5-5.6zM9.8 15.5v-7l6.2 3.5-6.2 3.5z"/></svg>
+          </a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.9.9 1.4.2.4.4 1 .4 2.2.1 1.2.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.9.7-1.4.9-.4.2-1 .4-2.2.4-1.2.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-1.2-.1-1.8-.3-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.9-.9-1.4-.2-.4-.4-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.9-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.2-.1 1.6-.1 4.8-.1zm0 3.4a6.4 6.4 0 100 12.8 6.4 6.4 0 000-12.8zm0 10.5a4.1 4.1 0 110-8.2 4.1 4.1 0 010 8.2zm6.6-10.7a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>
+          </a>
+          <a href="https://tiktok.com/" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 2h-3v13.5a3 3 0 11-3-3v-3a6 6 0 106 6V8.5a7 7 0 004 1.3V7a4 4 0 01-4-5z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="foot">
+        <h4>Ссылки</h4>
+        <ul>
+          <li><a href="#links">Все площадки</a></li>
+          <li><a href="#highlights">Книга и подкаст</a></li>
+          <li><a href="#newsletter">Подписка</a></li>
+        </ul>
+      </div>
+
+      <div class="foot">
+        <h4>Работа со мной</h4>
+        <ul>
+          <li><a href="#">Курс «Голос»</a></li>
+          <li><a href="#">Индивидуально</a></li>
+          <li><a href="#">Корпоративно</a></li>
+        </ul>
+      </div>
+
+      <div class="foot">
+        <h4>Написать</h4>
+        <ul>
+          <li><a href="mailto:hi@nikavetrova.ru">hi@nikavetrova.ru</a></li>
+          <li><a href="#">Сотрудничество</a></li>
+          <li><a href="#">Пресс-кит</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span>© 2025 Ника Овсянова</span>
+      <span>Сделано с любовью к голосу</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================ FAB ============================ -->
+<div class="fab">
+  <a href="https://t.me/" target="_blank" rel="noopener" class="tg" aria-label="Telegram">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3L19 19.1c-.2 1-.8 1.2-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.5.4-.9.4l.3-4.7 8.5-7.7c.4-.3-.1-.5-.6-.2L7.3 12.9l-4.5-1.4c-1-.3-1-1 .2-1.4l17.5-6.8c.8-.3 1.5.2 1.4 1z"/></svg>
+  </a>
+  <a href="https://wa.me/" target="_blank" rel="noopener" class="wa" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.6-.8-2.7-1.4-3.7-3.2-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 1.8.8 2.5.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.5-.3zM12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2z"/></svg>
+  </a>
+</div>
+
+<script>
+/* ============================================================
+   NAV SCROLL STATE
+   ============================================================ */
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 10);
+}, {passive:true});
+
+/* ============================================================
+   MARQUEE DUPLICATION
+   ============================================================ */
+(function(){
+  const track = document.querySelector('.topbar-track');
+  if (!track) return;
+  const set = track.querySelector('.topbar-set');
+  if (set) track.appendChild(set.cloneNode(true));
+})();
+
+/* ============================================================
+   MOBILE DRAWER
+   ============================================================ */
+const burger = document.getElementById('burger');
+const drawer = document.getElementById('drawer');
+burger.addEventListener('click', () => {
+  burger.classList.toggle('on');
+  drawer.classList.toggle('open');
+  document.body.style.overflow = drawer.classList.contains('open') ? 'hidden' : '';
+});
+drawer.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    burger.classList.remove('on');
+    drawer.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+});
+
+/* ============================================================
+   REVEAL ON SCROLL
+   ============================================================ */
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('in'), i * 80);
+      io.unobserve(entry.target);
+    }
+  });
+}, {threshold: 0.08, rootMargin: '0px 0px -60px 0px'});
+document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+/* ============================================================
+   NEWSLETTER FORM
+   ============================================================ */
+const subForm = document.getElementById('subForm');
+const subSuccess = document.getElementById('subSuccess');
+if (subForm) {
+  subForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const email = document.getElementById('email');
+    const agree = document.getElementById('subAgree');
+    let valid = true;
+
+    email.classList.remove('err');
+    const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim());
+    if (!emailOk) { email.classList.add('err'); valid = false; }
+
+    if (!agree.checked) {
+      valid = false;
+      agree.parentElement.style.color = '#FF6B4A';
+    } else {
+      agree.parentElement.style.color = '';
+    }
+
+    if (!valid) return;
+
+    const btn = subForm.querySelector('button[type="submit"]');
+    btn.textContent = 'Отправляем…';
+    btn.disabled = true;
+
+    // Здесь можно отправить на сервер:
+    // fetch('/api/subscribe', { method:'POST', body:new FormData(subForm) })
+
+    setTimeout(() => {
+      subForm.style.display = 'none';
+      subSuccess.classList.add('show');
+    }, 700);
+  });
+}
+
+/* ============================================================
+   SMOOTH ANCHORS
+   ============================================================ */
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e){
+    const href = this.getAttribute('href');
+    if (!href || href === '#' || href.length < 2) return;
+    const target = document.querySelector(href);
+    if (!target) return;
+    e.preventDefault();
+    const top = target.getBoundingClientRect().top + window.pageYOffset - 80;
+    window.scrollTo({ top, behavior: 'smooth' });
+  });
+});
+</script>
+</body>
+</html>
